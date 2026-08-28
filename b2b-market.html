@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Market | ORGIA.BD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{beige:'#E8DFD0',gold:'#C4A962',charcoal:'#2C2C2C'},fontFamily:{serif:['Playfair Display','serif'],sans:['Montserrat','sans-serif']}}}}</script>
+</head>
+<body data-page="b2b-market" class="font-sans text-charcoal bg-white antialiased">
+  <div id="site-header"></div>
+  <main>
+    <section class="relative h-[40vh] sm:h-[50vh] flex items-center bg-black">
+      <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=1920&q=80" alt="Garment manufacturing facility in Bangladesh" class="absolute inset-0 w-full h-full object-cover opacity-40">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+        <p class="text-gold text-xs tracking-[0.3em] mb-4">WHOLESALE</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">B2B Market</h1>
+        <p class="text-white/70 mt-4 max-w-xl mx-auto text-sm">Connect with verified manufacturers and source premium Bangladeshi garments for your brand.</p>
+      </div>
+    </section>
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-2xl sm:text-3xl text-center mb-12">Why Bangladesh?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center p-6"><i class="fas fa-industry text-gold text-3xl mb-4"></i><h3 class="font-semibold mb-2">World-Class Manufacturing</h3><p class="text-xs text-charcoal/60">Home to 4,000+ garment factories with decades of export expertise.</p></div>
+          <div class="text-center p-6"><i class="fas fa-hand-sparkles text-gold text-3xl mb-4"></i><h3 class="font-semibold mb-2">Artisan Heritage</h3><p class="text-xs text-charcoal/60">Access to traditional crafts like jamdani, muslin, and nakshi kantha.</p></div>
+          <div class="text-center p-6"><i class="fas fa-dollar-sign text-gold text-3xl mb-4"></i><h3 class="font-semibold mb-2">Competitive Pricing</h3><p class="text-xs text-charcoal/60">Premium quality at competitive rates with flexible MOQs.</p></div>
+          <div class="text-center p-6"><i class="fas fa-leaf text-gold text-3xl mb-4"></i><h3 class="font-semibold mb-2">Sustainability</h3><p class="text-xs text-charcoal/60">Growing eco-conscious production with green certifications.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 border-y border-charcoal/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-filter-group data-filter-target="#manufacturer-grid" class="flex flex-wrap justify-center gap-2">
+          <button data-filter="all" type="button" class="px-5 py-2 text-xs tracking-widest border border-black bg-black text-white">ALL</button>
+          <button data-filter="Woven Fabrics" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">WOVEN</button>
+          <button data-filter="Ready-to-Wear" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">READY-TO-WEAR</button>
+          <button data-filter="Embroidery" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">EMBROIDERY</button>
+          <button data-filter="Sustainable" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">SUSTAINABLE</button>
+          <button data-filter="Knitwear" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">KNITWEAR</button>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-2xl sm:text-3xl mb-10">Manufacturer Directory</h2>
+        <div id="manufacturer-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div data-category="Woven Fabrics" class="border border-charcoal/10 hover:border-gold/50 transition-colors p-6"><img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&q=80" alt="Dhaka Textile Mills facility" class="w-full aspect-video object-cover mb-4"><h3 class="font-semibold">Dhaka Textile Mills</h3><p class="text-xs text-gold mt-1">Woven Fabrics</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka &bull; 50,000 units/month</p><div class="flex items-center gap-1 mt-2 text-gold text-xs"><i class="fas fa-star"></i><span>4.8</span></div></div>
+          <div data-category="Ready-to-Wear" class="border border-charcoal/10 hover:border-gold/50 transition-colors p-6"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Heritage Garments Ltd. facility" class="w-full aspect-video object-cover mb-4"><h3 class="font-semibold">Heritage Garments Ltd.</h3><p class="text-xs text-gold mt-1">Ready-to-Wear</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Gazipur &bull; 100,000 units/month</p><div class="flex items-center gap-1 mt-2 text-gold text-xs"><i class="fas fa-star"></i><span>4.9</span></div></div>
+          <div data-category="Embroidery" class="border border-charcoal/10 hover:border-gold/50 transition-colors p-6"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt="Artisan Embroidery House workshop" class="w-full aspect-video object-cover mb-4"><h3 class="font-semibold">Artisan Embroidery House</h3><p class="text-xs text-gold mt-1">Embroidery</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Narayanganj &bull; 20,000 units/month</p><div class="flex items-center gap-1 mt-2 text-gold text-xs"><i class="fas fa-star"></i><span>4.7</span></div></div>
+          <div data-category="Sustainable" class="border border-charcoal/10 hover:border-gold/50 transition-colors p-6"><img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80" alt="Green Thread Factory sustainable production" class="w-full aspect-video object-cover mb-4"><h3 class="font-semibold">Green Thread Factory</h3><p class="text-xs text-gold mt-1">Sustainable</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Chittagong &bull; 30,000 units/month</p><div class="flex items-center gap-1 mt-2 text-gold text-xs"><i class="fas fa-star"></i><span>4.6</span></div></div>
+          <div data-category="Knitwear" class="border border-charcoal/10 hover:border-gold/50 transition-colors p-6"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Premium Knitwear Co. production line" class="w-full aspect-video object-cover mb-4"><h3 class="font-semibold">Premium Knitwear Co.</h3><p class="text-xs text-gold mt-1">Knitwear</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka &bull; 75,000 units/month</p><div class="flex items-center gap-1 mt-2 text-gold text-xs"><i class="fas fa-star"></i><span>4.8</span></div></div>
+          <div data-category="Dyeing & Finishing" class="border border-charcoal/10 hover:border-gold/50 transition-colors p-6"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Royal Dyeing Works facility" class="w-full aspect-video object-cover mb-4"><h3 class="font-semibold">Royal Dyeing Works</h3><p class="text-xs text-gold mt-1">Dyeing &amp; Finishing</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Savar &bull; 40,000 units/month</p><div class="flex items-center gap-1 mt-2 text-gold text-xs"><i class="fas fa-star"></i><span>4.5</span></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 lg:py-24 bg-beige/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-2xl sm:text-3xl text-center mb-12">Sourcing Process</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="text-center"><i class="fas fa-search text-gold text-2xl mb-3"></i><h3 class="font-semibold text-sm mb-2">Discover</h3><p class="text-xs text-charcoal/60">Browse verified manufacturers by category, capacity, and location.</p></div>
+          <div class="text-center"><i class="fas fa-handshake text-gold text-2xl mb-3"></i><h3 class="font-semibold text-sm mb-2">Connect</h3><p class="text-xs text-charcoal/60">Request quotes and communicate directly with manufacturers.</p></div>
+          <div class="text-center"><i class="fas fa-truck text-gold text-2xl mb-3"></i><h3 class="font-semibold text-sm mb-2">Produce</h3><p class="text-xs text-charcoal/60">Quality assurance, production tracking, and global shipping.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 lg:py-24" id="quote">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-2xl sm:text-3xl text-center mb-10">Request a Quote</h2>
+        <form id="quote-form" class="space-y-6" novalidate>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label for="companyName" class="block text-xs tracking-widest text-charcoal/60 mb-2">COMPANY NAME *</label><input type="text" id="companyName" name="companyName" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="companyName" class="text-red-500 text-xs mt-1 hidden"></p></div>
+            <div><label for="contactName" class="block text-xs tracking-widest text-charcoal/60 mb-2">CONTACT NAME *</label><input type="text" id="contactName" name="contactName" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="contactName" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label for="quote-email" class="block text-xs tracking-widest text-charcoal/60 mb-2">EMAIL *</label><input type="email" id="quote-email" name="email" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="email" class="text-red-500 text-xs mt-1 hidden"></p></div>
+            <div><label for="quote-phone" class="block text-xs tracking-widest text-charcoal/60 mb-2">PHONE *</label><input type="tel" id="quote-phone" name="phone" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="phone" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label for="productType" class="block text-xs tracking-widest text-charcoal/60 mb-2">PRODUCT TYPE *</label><select id="productType" name="productType" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold bg-white"><option value="">Select type</option><option value="woven">Woven Garments</option><option value="knit">Knitwear</option><option value="embroidery">Embroidered</option><option value="accessories">Accessories</option></select><p data-error="productType" class="text-red-500 text-xs mt-1 hidden"></p></div>
+            <div><label for="quantity" class="block text-xs tracking-widest text-charcoal/60 mb-2">QUANTITY *</label><input type="text" id="quantity" name="quantity" placeholder="e.g. 5,000 units" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="quantity" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          </div>
+          <div><label for="quote-message" class="block text-xs tracking-widest text-charcoal/60 mb-2">MESSAGE *</label><textarea id="quote-message" name="message" rows="4" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold resize-y"></textarea><p data-error="message" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          <button type="submit" class="w-full bg-black text-white py-4 text-xs tracking-widest font-semibold hover:bg-charcoal transition-colors">REQUEST QUOTE</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

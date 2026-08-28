@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Research Showcase | ORGIA.BD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{beige:'#E8DFD0',gold:'#C4A962',charcoal:'#2C2C2C'},fontFamily:{serif:['Playfair Display','serif'],sans:['Montserrat','sans-serif']}}}}</script>
+</head>
+<body data-page="creative-research" class="font-sans text-charcoal bg-white antialiased">
+  <div id="site-header"></div>
+  <main>
+    <section class="relative h-[40vh] sm:h-[50vh] flex items-center bg-black">
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1920&q=80" alt="Creative research and cultural archive" class="absolute inset-0 w-full h-full object-cover opacity-40">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+        <p class="text-gold text-xs tracking-[0.3em] mb-4">ARCHIVE</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">Creative Research Showcase</h1>
+        <p class="text-white/70 mt-4 max-w-2xl mx-auto text-sm">A digital cultural archive documenting Bangladesh's rich fashion, textile, and craft heritage.</p>
+      </div>
+    </section>
+    <section class="py-10 border-b border-charcoal/10 sticky top-16 lg:top-20 bg-white z-30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-filter-group data-filter-target="#research-grid" class="flex flex-wrap justify-center gap-2">
+          <button data-filter="all" type="button" class="px-4 py-2 text-xs tracking-widest border border-black bg-black text-white">ALL</button>
+          <button data-filter="Textile" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">TEXTILE</button>
+          <button data-filter="Craft" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">CRAFT</button>
+          <button data-filter="Culture" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">CULTURE</button>
+          <button data-filter="History" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">HISTORY</button>
+          <button data-filter="Design" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">DESIGN</button>
+          <button data-filter="Innovation" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">INNOVATION</button>
+          <button data-filter="Sustainability" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">SUSTAINABILITY</button>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="research-grid" class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          <a href="research-detail.html?id=1" data-category="Textile" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="The Art of Jamdani Weaving" class="w-full object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Textile</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">The Art of Jamdani Weaving</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">Exploring the centuries-old jamdani weaving tradition of Dhaka and its revival in contemporary fashion.</p><p class="text-xs text-charcoal/40 mt-3">Dr. Ayesha Begum &bull; 8 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=2" data-category="History" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt="Muslin: The Lost Fabric of Bengal" class="w-full aspect-[4/3] object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">History</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Muslin: The Lost Fabric of Bengal</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">A deep dive into the legendary muslin fabric that once defined Bengal's textile supremacy.</p><p class="text-xs text-charcoal/40 mt-3">Prof. Kamaluddin &bull; 12 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=3" data-category="Craft" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&q=80" alt="Nakshi Kantha: Stories in Stitches" class="w-full object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Craft</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Nakshi Kantha: Stories in Stitches</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">How rural women artisans preserve cultural narratives through the ancient art of nakshi kantha embroidery.</p><p class="text-xs text-charcoal/40 mt-3">Rashida Akter &bull; 6 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=4" data-category="Sustainability" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80" alt="Sustainable Dyes of Bangladesh" class="w-full aspect-[3/4] object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Sustainability</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Sustainable Dyes of Bangladesh</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">Natural dyeing techniques using indigenous plants and their role in eco-conscious fashion.</p><p class="text-xs text-charcoal/40 mt-3">Farhana Islam &bull; 7 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=5" data-category="Culture" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Fashion in Mughal Bengal" class="w-full object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Culture</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Fashion in Mughal Bengal</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">Tracing the influence of Mughal aesthetics on Bengali clothing and textile traditions.</p><p class="text-xs text-charcoal/40 mt-3">Dr. Shahidul Haque &bull; 10 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=6" data-category="Innovation" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Digital Fashion Innovation" class="w-full aspect-[4/3] object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Innovation</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Digital Fashion Innovation</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">How Bangladeshi designers are embracing technology to reach global audiences.</p><p class="text-xs text-charcoal/40 mt-3">Tanvir Ahmed &bull; 5 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=7" data-category="Design" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=600&q=80" alt="Contemporary Bengali Silhouettes" class="w-full object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Design</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Contemporary Bengali Silhouettes</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">Reimagining traditional Bengali garments for the modern wardrobe.</p><p class="text-xs text-charcoal/40 mt-3">Rima Sultana &bull; 9 min read</p></div>
+          </a>
+          <a href="research-detail.html?id=8" data-category="Craft" class="block break-inside-avoid group border border-charcoal/10 hover:border-gold/50 transition-colors overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&q=80" alt="Handloom Revival Movement" class="w-full aspect-[3/4] object-cover">
+            <div class="p-5"><span class="text-[10px] tracking-widest text-gold uppercase">Craft</span><h3 class="font-serif text-lg mt-2 group-hover:text-gold transition-colors">Handloom Revival Movement</h3><p class="text-xs text-charcoal/60 mt-2 line-clamp-2">The grassroots movement bringing handloom weaving back to mainstream fashion.</p><p class="text-xs text-charcoal/40 mt-3">Kamal Hossain &bull; 8 min read</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | ORGIA.BD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{beige:'#E8DFD0',gold:'#C4A962',charcoal:'#2C2C2C'},fontFamily:{serif:['Playfair Display','serif'],sans:['Montserrat','sans-serif']}}}}</script>
+</head>
+<body data-page="collections" class="font-sans text-charcoal bg-white antialiased">
+  <div id="site-header"></div>
+  <main>
+    <section class="relative h-[40vh] sm:h-[50vh] flex items-center bg-black">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&q=80" alt="Fashion collections editorial" class="absolute inset-0 w-full h-full object-cover opacity-40">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+        <p class="text-gold text-xs tracking-[0.3em] mb-4">CURATED</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">Collections</h1>
+        <p class="text-white/70 mt-4 max-w-xl mx-auto text-sm">Explore curated fashion collections from Bangladesh's finest designers.</p>
+      </div>
+    </section>
+    <section class="py-10 border-b border-charcoal/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-filter-group data-filter-target="#collection-grid" class="flex flex-wrap justify-center gap-2">
+          <button data-filter="all" type="button" class="px-5 py-2 text-xs tracking-widest border border-black bg-black text-white transition-colors">ALL</button>
+          <button data-filter="Festive" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">FESTIVE</button>
+          <button data-filter="Bridal" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">BRIDAL</button>
+          <button data-filter="Pret" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">PRET</button>
+          <button data-filter="Menswear" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">MENSWEAR</button>
+          <button data-filter="Luxury" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">LUXURY</button>
+          <button data-filter="Limited Edition" type="button" class="px-5 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">LIMITED EDITION</button>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="collection-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="collection-detail.html?id=1" data-category="Festive" class="group relative aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80" alt="Festive collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-0 p-6 text-white"><h3 class="font-bold text-lg tracking-widest">FESTIVE</h3><p class="text-xs text-white/70 mt-1">24 Pieces &bull; Sabrina Chowdhury</p><span class="inline-block mt-3 text-xs tracking-widest group-hover:text-gold transition-colors">Shop Now <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          <a href="collection-detail.html?id=2" data-category="Pret" class="group relative aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&q=80" alt="Pret collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-0 p-6 text-white"><h3 class="font-bold text-lg tracking-widest">PRET</h3><p class="text-xs text-white/70 mt-1">18 Pieces &bull; Nusrat Jahan</p><span class="inline-block mt-3 text-xs tracking-widest group-hover:text-gold transition-colors">Shop Now <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          <a href="collection-detail.html?id=3" data-category="Bridal" class="group relative aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&q=80" alt="Bridal collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-0 p-6 text-white"><h3 class="font-bold text-lg tracking-widest">BRIDAL</h3><p class="text-xs text-white/70 mt-1">12 Pieces &bull; Tanvir Ahmed</p><span class="inline-block mt-3 text-xs tracking-widest group-hover:text-gold transition-colors">Shop Now <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          <a href="collection-detail.html?id=4" data-category="Menswear" class="group relative aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800&q=80" alt="Menswear collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-0 p-6 text-white"><h3 class="font-bold text-lg tracking-widest">MENSWEAR</h3><p class="text-xs text-white/70 mt-1">20 Pieces &bull; Arif Rahman</p><span class="inline-block mt-3 text-xs tracking-widest group-hover:text-gold transition-colors">Shop Now <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          <a href="collection-detail.html?id=5" data-category="Luxury" class="group relative aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Luxury collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-0 p-6 text-white"><h3 class="font-bold text-lg tracking-widest">LUXURY</h3><p class="text-xs text-white/70 mt-1">8 Pieces &bull; Imran Kabir</p><span class="inline-block mt-3 text-xs tracking-widest group-hover:text-gold transition-colors">Shop Now <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          <a href="collection-detail.html?id=6" data-category="Limited Edition" class="group relative aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Limited Edition collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-0 p-6 text-white"><h3 class="font-bold text-lg tracking-widest">LIMITED EDITION</h3><p class="text-xs text-white/70 mt-1">6 Pieces &bull; Rima Sultana</p><span class="inline-block mt-3 text-xs tracking-widest group-hover:text-gold transition-colors">Shop Now <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Order | ORGIA.BD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{beige:'#E8DFD0',gold:'#C4A962',charcoal:'#2C2C2C'},fontFamily:{serif:['Playfair Display','serif'],sans:['Montserrat','sans-serif']}}}}</script>
+</head>
+<body data-page="custom-order" class="font-sans text-charcoal bg-white antialiased">
+  <div id="site-header"></div>
+  <main>
+    <section class="relative h-[40vh] sm:h-[50vh] flex items-center bg-black">
+      <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&q=80" alt="Custom fashion order with design sketches" class="absolute inset-0 w-full h-full object-cover opacity-40">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+        <p class="text-gold text-xs tracking-[0.3em] mb-4">BESPOKE</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">Custom Order</h1>
+        <p class="text-white/70 mt-4 max-w-xl mx-auto text-sm">Create your dream garment with Bangladesh's finest designers and artisans.</p>
+      </div>
+    </section>
+    <section class="py-16 lg:py-24 bg-beige/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-2xl sm:text-3xl text-center mb-12">Our Process</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center"><div class="w-12 h-12 mx-auto bg-gold text-white flex items-center justify-center font-serif text-xl mb-4">1</div><h3 class="font-semibold text-sm mb-2">Consultation</h3><p class="text-xs text-charcoal/60">Share your vision, preferences, and occasion details with our design team.</p></div>
+          <div class="text-center"><div class="w-12 h-12 mx-auto bg-gold text-white flex items-center justify-center font-serif text-xl mb-4">2</div><h3 class="font-semibold text-sm mb-2">Design &amp; Sketch</h3><p class="text-xs text-charcoal/60">Receive custom sketches and fabric samples for your approval.</p></div>
+          <div class="text-center"><div class="w-12 h-12 mx-auto bg-gold text-white flex items-center justify-center font-serif text-xl mb-4">3</div><h3 class="font-semibold text-sm mb-2">Crafting</h3><p class="text-xs text-charcoal/60">Master artisans bring your design to life with premium materials.</p></div>
+          <div class="text-center"><div class="w-12 h-12 mx-auto bg-gold text-white flex items-center justify-center font-serif text-xl mb-4">4</div><h3 class="font-semibold text-sm mb-2">Delivery</h3><p class="text-xs text-charcoal/60">Fitting, final adjustments, and delivery of your bespoke piece.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 lg:py-24">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-2xl sm:text-3xl text-center mb-10">Place Your Order</h2>
+        <form id="custom-order-form" class="space-y-6" novalidate>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label for="fullName" class="block text-xs tracking-widest text-charcoal/60 mb-2">FULL NAME *</label><input type="text" id="fullName" name="fullName" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="fullName" class="text-red-500 text-xs mt-1 hidden"></p></div>
+            <div><label for="email" class="block text-xs tracking-widest text-charcoal/60 mb-2">EMAIL *</label><input type="email" id="email" name="email" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="email" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          </div>
+          <div><label for="phone" class="block text-xs tracking-widest text-charcoal/60 mb-2">PHONE *</label><input type="tel" id="phone" name="phone" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="phone" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          <div><label for="garmentType" class="block text-xs tracking-widest text-charcoal/60 mb-2">GARMENT TYPE *</label><select id="garmentType" name="garmentType" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold bg-white"><option value="">Select garment type</option><option value="saree">Saree</option><option value="lehenga">Lehenga</option><option value="salwar">Salwar Kameez</option><option value="panjabi">Panjabi</option><option value="sherwani">Sherwani</option><option value="gown">Gown</option><option value="other">Other</option></select><p data-error="garmentType" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label for="budget" class="block text-xs tracking-widest text-charcoal/60 mb-2">BUDGET (BDT) *</label><select id="budget" name="budget" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold bg-white"><option value="">Select budget range</option><option value="15000-30000">BDT 15,000 – 30,000</option><option value="30000-60000">BDT 30,000 – 60,000</option><option value="60000-100000">BDT 60,000 – 1,00,000</option><option value="100000+">BDT 1,00,000+</option></select><p data-error="budget" class="text-red-500 text-xs mt-1 hidden"></p></div>
+            <div><label for="fabric" class="block text-xs tracking-widest text-charcoal/60 mb-2">PREFERRED FABRIC *</label><select id="fabric" name="fabric" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold bg-white"><option value="">Select fabric</option><option value="jamdani">Jamdani</option><option value="silk">Silk</option><option value="cotton">Cotton</option><option value="muslin">Muslin</option><option value="georgette">Georgette</option><option value="other">Other</option></select><p data-error="fabric" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          </div>
+          <div><label for="deadline" class="block text-xs tracking-widest text-charcoal/60 mb-2">DESIRED DEADLINE *</label><input type="date" id="deadline" name="deadline" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="deadline" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          <div><label class="block text-xs tracking-widest text-charcoal/60 mb-2">MEASUREMENTS</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <input type="text" name="bust" placeholder="Bust (in)" class="border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold">
+              <input type="text" name="waist" placeholder="Waist (in)" class="border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold">
+              <input type="text" name="hips" placeholder="Hips (in)" class="border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold">
+              <input type="text" name="length" placeholder="Length (in)" class="border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold">
+            </div>
+          </div>
+          <div><label for="reference-image" class="block text-xs tracking-widest text-charcoal/60 mb-2">REFERENCE IMAGE</label><input type="file" id="reference-image" name="referenceImage" accept="image/*" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold file:mr-4 file:py-1 file:px-3 file:border-0 file:bg-beige file:text-charcoal file:text-xs"><div id="image-preview" class="mt-3"></div></div>
+          <div><label for="requirements" class="block text-xs tracking-widest text-charcoal/60 mb-2">SPECIAL REQUIREMENTS *</label><textarea id="requirements" name="requirements" rows="5" placeholder="Describe your vision, color preferences, embroidery details, occasion, etc." class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold resize-y"></textarea><p data-error="requirements" class="text-red-500 text-xs mt-1 hidden"></p></div>
+          <button type="submit" class="w-full bg-black text-white py-4 text-xs tracking-widest font-semibold hover:bg-charcoal transition-colors">SUBMIT CUSTOM ORDER</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

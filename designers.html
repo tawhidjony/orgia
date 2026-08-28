@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designers | ORGIA.BD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{beige:'#E8DFD0',gold:'#C4A962',charcoal:'#2C2C2C'},fontFamily:{serif:['Playfair Display','serif'],sans:['Montserrat','sans-serif']}}}}</script>
+</head>
+<body data-page="designers" class="font-sans text-charcoal bg-white antialiased">
+  <div id="site-header"></div>
+  <main>
+    <section class="relative h-[40vh] sm:h-[50vh] flex items-center bg-black">
+      <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1920&q=80" alt="Fashion designers showcase" class="absolute inset-0 w-full h-full object-cover opacity-40">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+        <p class="text-gold text-xs tracking-[0.3em] mb-4">TALENT</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">Our Designers</h1>
+        <p class="text-white/70 mt-4 max-w-xl mx-auto text-sm">Meet the creative minds shaping Bangladeshi fashion on the global stage.</p>
+      </div>
+    </section>
+    <section class="py-10 lg:py-14 border-b border-charcoal/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-4 lg:items-center lg:justify-between">
+          <div class="relative flex-1 max-w-md">
+            <input type="search" id="designer-search" placeholder="Search designers..." class="w-full border border-charcoal/20 px-4 py-3 pl-10 text-sm focus:outline-none focus:border-gold">
+            <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-charcoal/40"></i>
+          </div>
+          <div data-filter-group data-filter-target="#designer-grid" class="flex flex-wrap gap-2">
+            <button data-filter="all" type="button" class="px-4 py-2 text-xs tracking-widest border border-black bg-black text-white transition-colors">ALL</button>
+            <button data-filter="Contemporary Wear" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">CONTEMPORARY</button>
+            <button data-filter="Menswear" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">MENSWEAR</button>
+            <button data-filter="Bridal" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">BRIDAL</button>
+            <button data-filter="Luxury Pret" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">LUXURY PRET</button>
+            <button data-filter="Festive" type="button" class="px-4 py-2 text-xs tracking-widest border border-charcoal/20 bg-white text-charcoal hover:border-gold transition-colors">FESTIVE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="designer-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div data-designer-card data-category="Contemporary Wear" data-name="rima sultana" data-location="dhaka" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=1" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Rima Sultana designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Rima Sultana</h3><p class="text-xs text-gold mt-1">Contemporary Wear</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Menswear" data-name="arif rahman" data-location="chittagong" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=2" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Arif Rahman designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Arif Rahman</h3><p class="text-xs text-gold mt-1">Menswear</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Chittagong</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Luxury Pret" data-name="nusrat jahan" data-location="dhaka" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=3" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=600&q=80" alt="Nusrat Jahan designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Nusrat Jahan</h3><p class="text-xs text-gold mt-1">Luxury Pret</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Bridal" data-name="tanvir ahmed" data-location="sylhet" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=4" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="Tanvir Ahmed designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Tanvir Ahmed</h3><p class="text-xs text-gold mt-1">Bridal</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Sylhet</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Sustainable" data-name="farhana islam" data-location="dhaka" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=5" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80" alt="Farhana Islam designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Farhana Islam</h3><p class="text-xs text-gold mt-1">Sustainable</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Menswear" data-name="kamal hossain" data-location="rajshahi" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=6" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80" alt="Kamal Hossain designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Kamal Hossain</h3><p class="text-xs text-gold mt-1">Menswear</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Rajshahi</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Festive" data-name="sabrina chowdhury" data-location="dhaka" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=7" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80" alt="Sabrina Chowdhury designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Sabrina Chowdhury</h3><p class="text-xs text-gold mt-1">Festive</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Limited Edition" data-name="imran kabir" data-location="dhaka" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=8" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Imran Kabir designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Imran Kabir</h3><p class="text-xs text-gold mt-1">Limited Edition</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Dhaka</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+          <div data-designer-card data-category="Bridal" data-name="mehjabin akter" data-location="khulna" class="group border border-charcoal/10 hover:border-gold/50 transition-colors">
+            <a href="designer-detail.html?id=9" class="block"><div class="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80" alt="Mehjabin Akter designer portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+            <div class="p-5"><h3 class="font-semibold text-charcoal group-hover:text-gold transition-colors">Mehjabin Akter</h3><p class="text-xs text-gold mt-1">Bridal</p><p class="text-xs text-charcoal/50 mt-2"><i class="fas fa-map-marker-alt mr-1"></i>Khulna</p><span class="inline-block mt-3 text-xs tracking-widest text-charcoal group-hover:text-gold transition-colors">View Profile <i class="fas fa-arrow-right ml-1"></i></span></div></a>
+          </div>
+        </div>
+        <div id="designer-pagination" class="flex justify-center gap-2 mt-12"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

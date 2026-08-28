@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ORGIA.BD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{beige:'#E8DFD0',gold:'#C4A962',charcoal:'#2C2C2C'},fontFamily:{serif:['Playfair Display','serif'],sans:['Montserrat','sans-serif']}}}}</script>
+</head>
+<body data-page="contact" class="font-sans text-charcoal bg-white antialiased">
+  <div id="site-header"></div>
+  <main>
+    <section class="relative h-[35vh] sm:h-[40vh] flex items-center bg-black">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&q=80" alt="ORGIA.BD contact" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+        <p class="text-gold text-xs tracking-[0.3em] mb-4">CONNECT</p>
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">Contact Us</h1>
+        <p class="text-white/70 mt-4 max-w-xl mx-auto text-sm">We'd love to hear from you. Reach out for inquiries, partnerships, or support.</p>
+      </div>
+    </section>
+    <section class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div>
+            <h2 class="font-serif text-2xl mb-8">Get in Touch</h2>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-beige flex items-center justify-center flex-shrink-0"><i class="fas fa-map-marker-alt text-gold"></i></div>
+                <div><h3 class="font-semibold text-sm">Address</h3><p class="text-sm text-charcoal/60 mt-1">House 42, Road 12, Dhanmondi<br>Dhaka 1209, Bangladesh</p></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-beige flex items-center justify-center flex-shrink-0"><i class="fas fa-envelope text-gold"></i></div>
+                <div><h3 class="font-semibold text-sm">Email</h3><p class="text-sm text-charcoal/60 mt-1"><a href="mailto:hello@orgia.bd" class="hover:text-gold transition-colors">hello@orgia.bd</a></p><p class="text-sm text-charcoal/60"><a href="mailto:support@orgia.bd" class="hover:text-gold transition-colors">support@orgia.bd</a></p></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-beige flex items-center justify-center flex-shrink-0"><i class="fas fa-phone text-gold"></i></div>
+                <div><h3 class="font-semibold text-sm">Phone</h3><p class="text-sm text-charcoal/60 mt-1">+880 1XXX-XXXXXX</p><p class="text-xs text-charcoal/40 mt-1">Mon – Fri, 9:00 AM – 6:00 PM (BST)</p></div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <h3 class="font-semibold text-sm mb-4">Follow Us</h3>
+              <div class="flex items-center gap-4">
+                <a href="#" class="w-10 h-10 border border-charcoal/20 flex items-center justify-center text-charcoal/60 hover:text-gold hover:border-gold transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="w-10 h-10 border border-charcoal/20 flex items-center justify-center text-charcoal/60 hover:text-gold hover:border-gold transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 border border-charcoal/20 flex items-center justify-center text-charcoal/60 hover:text-gold hover:border-gold transition-colors" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="w-10 h-10 border border-charcoal/20 flex items-center justify-center text-charcoal/60 hover:text-gold hover:border-gold transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="mt-10 aspect-video bg-beige/50 border border-charcoal/10 flex items-center justify-center">
+              <div class="text-center text-charcoal/40"><i class="fas fa-map text-3xl mb-2"></i><p class="text-sm">Map — Dhanmondi, Dhaka</p></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="font-serif text-2xl mb-8">Send a Message</h2>
+            <form id="contact-form" class="space-y-6" novalidate>
+              <div><label for="name" class="block text-xs tracking-widest text-charcoal/60 mb-2">NAME *</label><input type="text" id="name" name="name" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="name" class="text-red-500 text-xs mt-1 hidden"></p></div>
+              <div><label for="contact-email" class="block text-xs tracking-widest text-charcoal/60 mb-2">EMAIL *</label><input type="email" id="contact-email" name="email" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="email" class="text-red-500 text-xs mt-1 hidden"></p></div>
+              <div><label for="subject" class="block text-xs tracking-widest text-charcoal/60 mb-2">SUBJECT *</label><input type="text" id="subject" name="subject" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold"><p data-error="subject" class="text-red-500 text-xs mt-1 hidden"></p></div>
+              <div><label for="message" class="block text-xs tracking-widest text-charcoal/60 mb-2">MESSAGE *</label><textarea id="message" name="message" rows="6" class="w-full border border-charcoal/20 px-4 py-3 text-sm focus:outline-none focus:border-gold resize-y"></textarea><p data-error="message" class="text-red-500 text-xs mt-1 hidden"></p></div>
+              <button type="submit" class="w-full bg-black text-white py-4 text-xs tracking-widest font-semibold hover:bg-charcoal transition-colors">SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
